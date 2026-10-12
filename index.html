@@ -3,69 +3,219 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Privacy Policy — MC eSolutions Inc</title>
-<link rel="stylesheet" href="style.css" />
+<title>Rink Cast — Live hockey game announcements for your team chat</title>
+<meta name="description" content="Call goals, penalties and period updates from the rink and share them straight to your team's group chat. Free for 30 days." />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Rink Cast — Call the game. Announce it instantly." />
+<meta property="og:description" content="Live goals, penalties, and period updates — sent to your team's group chat the moment they happen." />
+<meta property="og:image" content="https://mcesolutionsinc.github.io/rink-cast/og-image.png" />
+<meta property="og:url" content="https://mcesolutionsinc.github.io/rink-cast/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" />
+<link rel="stylesheet" href="promo.css" />
 </head>
 <body>
+
 <div class="wrap">
-  <header class="site">
-    <a class="brand" href="index.html">MC eSolutions Inc</a>
-    <nav class="pages">
-      <a href="index.html" aria-current="page">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">
+      <img src="favicon.png" alt="" width="32" height="32" />
+      Rink Cast
+    </a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="#how-it-works">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="manual.html">Manual</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
     </nav>
   </header>
 
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: September 2026</p>
+  <main>
+    <div class="hero">
+      <div>
+        <p class="eyebrow">For hockey teams, parents &amp; fans</p>
+        <h1>Call the game.<br />Announce it <span class="accent">instantly.</span></h1>
+        <p class="lead">Live goals, penalties, and period updates — sent to your team's group chat the moment they happen.</p>
 
-  <p class="lead">This Privacy Policy covers the apps and services published by MC eSolutions Inc, including <strong>Rink Cast</strong>. It explains what data we collect, why, and how it's handled.</p>
+        <!--
+          STORE LINKS — the only place they live on this page.
+          Google Play is live. The App Store listing is not yet, so it renders as a disabled "Coming soon" button.
+          Once it goes live, replace its <span> with an <a>, e.g.:
+            <a class="store-btn" href="APP_STORE_URL">…same contents, minus the "Soon" badge…</a>
+        -->
+        <div class="store-row" id="download">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.mcesolutionsinc.rinkcast"><img src="google-play-badge.png" alt="Get it on Google Play" width="217" height="84" /></a>
+          <span class="store-btn is-disabled" aria-disabled="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.9-3.5.9-.7 0-1.9-.8-3.1-.8-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.7 2.4 2.9 2.4 1.2 0 1.6-.8 3-.8 1.4 0 1.8.8 3.1.8 1.3 0 2.1-1.2 2.9-2.3.9-1.3 1.3-2.6 1.3-2.7 0 0-2.5-1-2.5-4.2ZM14.1 5.8c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.1 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4Z"/></svg>
+            App Store
+            <span class="soon">Coming soon</span>
+          </span>
+        </div>
+        <p class="price-note">Free for 30 days, then $2.99/month or $19.99/year.</p>
+      </div>
 
-  <h2>The short version</h2>
-  <div class="card">
-    <p>Rink Cast stores your team rosters on your own device. We don't run our own servers, we don't have user accounts, and we don't collect analytics or advertising data. The only outside parties involved are the app stores and our subscription-billing provider, who handle your purchase — not us.</p>
-  </div>
+      <div class="hero-visual">
+        <!-- Promo reel: five screenshots on an 18s CSS loop (timing in promo.css under "Promo reel").
+             Described once for screen readers; the frames and captions themselves are hidden from them. -->
+        <div class="reel" role="img" aria-label="Rink Cast in action: pick your two teams, tap what happened, log a penalty with the player, the announcement lands in the team chat, and a full recap is sent at the end of the game.">
+          <div class="phone">
+            <div class="reel-screen">
+              <img class="reel-frame" src="screenshots/10-game-setup.webp" width="540" height="1142" alt="" />
+              <img class="reel-frame reel-frame--scroll" src="screenshots/12b-playbuilder-full.webp" width="540" height="1991" alt="" />
+              <img class="reel-frame" src="screenshots/14-penalty-types.webp" width="540" height="1142" alt="" />
+              <img class="reel-frame" src="screenshots/21-whatsapp-feed.webp" width="540" height="1142" alt="" />
+              <img class="reel-frame" src="screenshots/20-final-summary.webp" width="540" height="670" alt="" />
+            </div>
+          </div>
+          <ol class="reel-captions" aria-hidden="true">
+            <li>Pick your two teams</li>
+            <li>Tap what happened</li>
+            <li>Penalties, saves, icing too</li>
+            <li>Everyone knows instantly</li>
+            <li>Full recap when the horn goes</li>
+          </ol>
+          <div class="reel-pips" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
 
-  <h2>Data stored on your device</h2>
-  <p>Team names, jersey numbers, and player names you enter are stored locally on your device only, using standard on-device storage. This data is never transmitted to MC eSolutions Inc or to any third party automatically. It stays on your device unless you take a deliberate action to move it — for example:</p>
-  <ul>
-    <li><strong>Exporting a team file</strong> to share or save it yourself (you choose the destination — a messaging app, email, cloud storage, or a folder on your device).</li>
-    <li><strong>Sending a game announcement</strong> through your device's share sheet (for example, to WhatsApp) — you choose the recipient each time; we never send anything on your behalf.</li>
-  </ul>
-  <p>Uninstalling the app, or clearing its data through your device's app settings, permanently deletes everything stored locally. Because we don't keep a copy anywhere else, there's nothing further for us to delete on our end.</p>
+    <section id="how-it-works">
+      <h2>How it works</h2>
+      <p class="section-intro">Set your teams up once. On game day, it takes a few taps to tell everyone what just happened.</p>
 
-  <h2>Subscription and payment data</h2>
-  <p>Rink Cast offers a free trial followed by a paid subscription. Purchases are handled entirely by the Apple App Store or Google Play Store, and managed on our behalf by <strong>RevenueCat</strong>, a subscription-management service. We never see or store your payment card details.</p>
-  <p>To manage your subscription and confirm your entitlement, RevenueCat and the app stores process information such as a device- or account-linked purchase identifier and your subscription status (active, trialing, expired, etc.). This is standard for any app-store subscription and is governed by their own privacy policies:</p>
-  <ul>
-    <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></li>
-    <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
-    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-  </ul>
+      <ol class="steps">
+        <li class="step">
+          <div class="phone">
+            <img src="screenshots/06-roster-editor.webp" width="540" height="1142" loading="lazy" alt="Roster editor for the Riverside Rapids, listing players by jersey number and name." />
+          </div>
+          <h3><span class="step-number">1</span>Build your roster once</h3>
+          <p>Add each team's players with their jersey numbers. Rink Cast keeps them for every game after.</p>
+        </li>
+        <li class="step">
+          <div class="phone">
+            <img src="screenshots/13-goal-with-assists.webp" width="540" height="1142" loading="lazy" alt="A goal being recorded, with the scorer and two assisting players selected." />
+          </div>
+          <h3><span class="step-number">2</span>Call it live</h3>
+          <p>Tap what happened, then the team and player. The announcement is written for you — check the preview and tap Send.</p>
+        </li>
+        <li class="step">
+          <div class="phone">
+            <img src="screenshots/21-whatsapp-feed.webp" width="540" height="1142" loading="lazy" alt="A team group chat showing Rink Cast announcements for game time, a goal with assists, a penalty and an icing call." />
+          </div>
+          <h3><span class="step-number">3</span>Everyone knows instantly</h3>
+          <p>Pick your team's chat and it's posted. Families who couldn't make it follow along play by play.</p>
+        </li>
+      </ol>
+    </section>
 
-  <h2 id="data-deletion">Requesting data deletion</h2>
-  <p>Because Rink Cast stores your team rosters only on your own device, you're already in full control of that data — uninstalling the app, or clearing its data through your device's app settings, deletes it immediately and completely. We don't keep a copy anywhere else, so there's nothing further for us to delete on our end.</p>
-  <p>For the limited subscription/purchase data RevenueCat holds on our behalf (see above), email <a href="mailto:info@mc-eSolutions.ca">info@mc-eSolutions.ca</a> with your request and we'll have it deleted.</p>
+    <section>
+      <h2>Everything a game needs</h2>
+      <p class="section-intro">Built for the person with a phone in one hand and a coffee in the other.</p>
 
-  <h2>What we don't do</h2>
-  <ul>
-    <li>We don't run analytics, tracking, or advertising SDKs in Rink Cast.</li>
-    <li>We don't require an account, login, or personal profile to use the app.</li>
-    <li>We don't sell or share your data with third parties for marketing purposes.</li>
-  </ul>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Every kind of call</h3>
+          <p>Goals with assists, penalties, shots, saves, icing, offside, fights and timeouts — plus period starts, one-minute warnings and back to full strength.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12Z"/></svg></div>
+          <h3>Any chat app</h3>
+          <p>Announcements go through your phone's share menu, so they work with WhatsApp, Messages, or whichever app your team already uses.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4Z"/><path d="m13 7 4 4"/></svg></div>
+          <h3>Fix a mistake</h3>
+          <p>Tapped the wrong player? Remove the entry from the game log and the score updates to match.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></div>
+          <h3>Picks up where you left off</h3>
+          <p>A phone call or a flat battery won't cost you the game. Reopen the app and resume right where you were.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></div>
+          <h3>Share rosters</h3>
+          <p>Export your teams to a file and import them on another phone, so a co-coach or the next parent can take over.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+          <h3>Hold it either way</h3>
+          <p>Works in portrait or landscape, however you're standing at the glass.</p>
+        </div>
+      </div>
+    </section>
 
-  <h2>Children's privacy</h2>
-  <p>Our apps are not directed at children under 13, and we don't knowingly collect personal information from them. Team rosters may include a minor's name and jersey number entered by a coach or parent using the app — this data stays on that person's own device under the same terms described above.</p>
+    <section>
+      <div class="split">
+        <div class="phone">
+          <img src="screenshots/20-final-summary.webp" width="540" height="670" loading="lazy" alt="Final score summary: Riverside Rapids 1, Northgate Nighthawks 0, with the goal and penalty listed and a Send Summary button." />
+        </div>
+        <div>
+          <h2>A full recap when the horn goes</h2>
+          <p>When the game's over, Rink Cast pulls everything together into one summary and sends it in a single tap.</p>
+          <ul class="checklist">
+            <li>Final score and who won</li>
+            <li>Every goal, with scorers and assists</li>
+            <li>Every penalty, by period</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <h2>Changes to this policy</h2>
-  <p>If this policy changes, we'll update the "Last updated" date at the top of this page. Since we don't collect contact information from users, we're not able to notify you directly — please check back if you have concerns.</p>
+    <section>
+      <div class="callout">
+        <h2>Your rosters stay on your phone</h2>
+        <p>There's no account to create and nothing to sign in to. Team names and players are stored on your device, and Rink Cast doesn't run ads or analytics. <a href="privacy.html">Read the privacy policy</a>.</p>
+      </div>
+    </section>
 
-  <h2>Contact us</h2>
-  <p>Questions about this policy? Email <a href="mailto:info@mc-eSolutions.ca">info@mc-eSolutions.ca</a>.</p>
+    <section id="pricing">
+      <h2>Simple pricing</h2>
+      <p class="section-intro">Try everything free for 30 days. Keep going with whichever plan suits your season.</p>
 
-  <footer>
-    &copy; 2026 MC eSolutions Inc. This page applies to Rink Cast and other MC eSolutions Inc apps.
+      <div class="pricing">
+        <div class="plan">
+          <h3>Monthly</h3>
+          <p class="trial">30 days free</p>
+          <p class="price">$2.99 <span>/ month</span></p>
+        </div>
+        <div class="plan">
+          <h3>Yearly</h3>
+          <p class="trial">30 days free</p>
+          <p class="price">$19.99 <span>/ year</span></p>
+        </div>
+      </div>
+      <p class="fine-print">Subscriptions are managed through your app store, and you can cancel anytime. The exact price for your country is shown in the store before you subscribe.</p>
+    </section>
+
+    <section class="cta">
+      <h2>Ready for puck drop?</h2>
+      <p class="section-intro">Rink Cast is available on Google Play, and coming soon to the App Store.</p>
+      <div class="store-row">
+        <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.mcesolutionsinc.rinkcast"><img src="google-play-badge.png" alt="Get it on Google Play" width="217" height="84" /></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 MC eSolutions Inc</span>
+    <nav aria-label="Legal">
+      <a href="manual.html">Manual</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="mailto:info@mc-eSolutions.ca">info@mc-eSolutions.ca</a>
+    </nav>
   </footer>
 </div>
+
 </body>
 </html>

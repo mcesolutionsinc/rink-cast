@@ -1,9 +1,12 @@
-# rink-cast-legal
+# rink-cast
 
-Hosted Privacy Policy and Terms of Use for [Rink Cast](https://github.com/mcesolutionsinc/hockey-announcer) and other MC eSolutions Inc apps, published via GitHub Pages.
+Public site for [Rink Cast](https://github.com/mcesolutionsinc/rink-cast-app) and its Privacy Policy and Terms of Use, published via GitHub Pages. Pages share one theme (`promo.css`, Volt Graphite).
 
-- Privacy Policy: https://mcesolutionsinc.github.io/rink-cast-legal/
-- Terms of Use: https://mcesolutionsinc.github.io/rink-cast-legal/terms.html
-- Rink Cast promo page: https://mcesolutionsinc.github.io/rink-cast-legal/rink-cast.html
+- Home: https://mcesolutionsinc.github.io/rink-cast/
+- User manual: https://mcesolutionsinc.github.io/rink-cast/manual.html
+- Privacy Policy: https://mcesolutionsinc.github.io/rink-cast/privacy.html
+- Terms of Use: https://mcesolutionsinc.github.io/rink-cast/terms.html
 
-This repo is intentionally separate from the app's own (private) repository, and public only so the pages are reachable for app store review — it contains no app code.
+The privacy policy and terms cover every app MC eSolutions Inc ships. This repo is intentionally separate from the app's own (private) repository and contains no app code.
+
+The app stores' privacy policy URLs point at `privacy.html`; don't move it without updating Play Console and App Store Connect.

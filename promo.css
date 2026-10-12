@@ -72,6 +72,8 @@ a { color: var(--accent); }
 
 .site-nav a:hover { color: var(--accent); }
 
+.site-nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
+
 /* Hero */
 
 .hero {
@@ -764,3 +766,32 @@ h2 {
 @media (min-width: 861px) and (max-width: 1040px) {
   .features { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Legal pages (privacy, terms) */
+
+.legal { max-width: 720px; margin: 0 auto; padding-block: 24px 40px; }
+
+.legal h1 { font-size: 32px; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.01em; }
+
+.legal .updated { color: var(--text-muted); font-size: 14px; margin: 0 0 32px; }
+
+.legal h2 { font-size: 20px; margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+
+.legal p, .legal li { font-size: 15px; }
+
+.legal .lead { font-size: 16px; color: var(--text-muted); max-width: none; }
+
+.legal ul { padding-left: 20px; }
+
+.legal li + li { margin-top: 6px; }
+
+.legal .card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 20px 0;
+}
+
+.legal .card p:first-child { margin-top: 0; }
+.legal .card p:last-child { margin-bottom: 0; }
