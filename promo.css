@@ -145,6 +145,11 @@ h1 .accent { color: var(--accent); }
 .play-badge:hover { transform: translateY(-2px); }
 .play-badge img { display: block; height: 84px; width: auto; }
 
+/* Apple's official badge SVG, sized to match the visible height of the trimmed Play badge. */
+.app-store-badge { display: inline-block; transition: transform 0.15s ease; }
+.app-store-badge:hover { transform: translateY(-2px); }
+.app-store-badge img { display: block; height: 56px; width: auto; }
+
 .store-btn .soon {
   font-size: 12px;
   font-weight: 600;
