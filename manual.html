@@ -218,21 +218,39 @@
         <div class="doc-text">
           <ol class="doc-steps">
             <li>On the Setup screen, pick a <strong>Home Team</strong> and <strong>Away Team</strong>.</li>
+            <li>Choose the <strong>Game rules</strong>: <strong>STANDARD</strong> or <strong>YOUTH</strong> (see below).</li>
+            <li>Set the <strong>Period lengths</strong> (see below).</li>
             <li>Tap <strong>START GAME</strong>.</li>
             <li>Check the pre-game announcement preview, then tap <strong>SEND</strong>.</li>
           </ol>
           <p>Sending that first announcement is what moves you into the live play builder — there's no separate
             "begin game" step.</p>
+          <p><strong>Game rules.</strong> <strong>STANDARD</strong> has 2, 4, 5 and 10 minute penalties and tracks
+            power plays. <strong>YOUTH</strong> is for leagues where every penalty is 1 minute and the team isn't
+            short-handed: penalties are always 1 minute, and Rink Cast shows no strength ("5 on 4") or power-play
+            tags. Rink Cast remembers your choice for next time, the Pre-Game screen shows it again (tap the other
+            card to switch before you send), and you can change it during the game.</p>
+          <p><strong>Period lengths.</strong> Youth leagues play different period lengths, and they can differ within
+            a game. Set the 1st, 2nd, 3rd and overtime lengths here: tap a period, then tap 10, 12, 15 or 20, or tap
+            <strong>Other</strong> and type any length from 1:00 to 30:00 (for example <em>14</em> or <em>12:30</em>).
+            <strong>ALL 10</strong>, <strong>ALL 12</strong>, <strong>ALL 15</strong> and <strong>ALL 20</strong> fill
+            every period at once. Your choices are remembered for next time. Not sure? Leave it at 20 — you can
+            correct a period at any time during the game.</p>
         </div>
         <div class="doc-shots doc-shots--row">
           <figure class="doc-shot doc-shot--wide">
-            <img src="screenshots/manual/10-game-setup.webp" width="640" height="1353" loading="lazy"
-              alt="New Game Setup with Riverside Rapids as Home Team and Northgate Nighthawks as Away Team." />
+            <img src="screenshots/manual/10c-setup-rules.webp" width="640" height="1352" loading="lazy"
+              alt="New Game Setup with Riverside Rapids as Home Team and Northgate Nighthawks as Away Team, the STANDARD and YOUTH game rules cards, and period lengths of 10, 10, 12 and 12 minutes." />
             <figcaption>Setup</figcaption>
           </figure>
           <figure class="doc-shot doc-shot--wide">
-            <img src="screenshots/manual/11-pregame.webp" width="640" height="1353" loading="lazy"
-              alt="Pre-game screen with a GAME TIME announcement preview and a SEND button." />
+            <img src="screenshots/manual/24-period-length-other.webp" width="640" height="1352" loading="lazy"
+              alt="The period length sheet with Other selected and 12:30 typed in, shown at the top of the screen above the keyboard." />
+            <figcaption>Typing any period length</figcaption>
+          </figure>
+          <figure class="doc-shot doc-shot--wide">
+            <img src="screenshots/manual/11c-pregame-rules.webp" width="640" height="1352" loading="lazy"
+              alt="Pre-game screen showing the YOUTH game rules selected, the period lengths, a GAME TIME announcement preview and a SEND button." />
             <figcaption>Pre-game announcement</figcaption>
           </figure>
         </div>
@@ -278,12 +296,24 @@
           <p>When a player scores their <strong>third goal of the game</strong>, Rink Cast adds
             <strong>🎩 HAT TRICK!</strong> to the announcement automatically &mdash; there's nothing extra to tap.
             It also shows in the recaps and the game summary.</p>
+          <p>If the scoring team has an extra skater because of a penalty, the goal is tagged
+            <strong>⚡ POWER PLAY GOAL</strong> automatically. A goal by the team that is a skater down is tagged
+            <strong>SHORT-HANDED GOAL</strong>. After you send a power-play goal, Rink Cast asks whether it ended a
+            minor: tap <strong>END IT</strong> to take that penalty out of the box (for a double minor it offers
+            <strong>TAKE OFF 2 MIN</strong>), or <strong>KEEP</strong> to leave it. This only updates the penalty box;
+            nothing extra is sent to the chat. Majors and misconducts aren't ended by a goal. (In YOUTH rules there
+            are no power-play tags and no prompt.)</p>
         </div>
-        <div class="doc-shots">
+        <div class="doc-shots doc-shots--row">
           <figure class="doc-shot doc-shot--wide">
             <img src="screenshots/manual/13-goal-with-assists.webp" width="640" height="1353" loading="lazy"
               alt="A goal with scorer #11 D. Marchetti and two assists selected." />
             <figcaption>Goal with scorer and assists</figcaption>
+          </figure>
+          <figure class="doc-shot doc-shot--wide">
+            <img src="screenshots/manual/27-power-play-goal.webp" width="640" height="1441" loading="lazy"
+              alt="A goal by #11 D. Marchetti previewed as a power play goal, with the prompt asking whether it ended a minor, offering END IT or KEEP." />
+            <figcaption>A power-play goal</figcaption>
           </figure>
         </div>
       </div>
@@ -291,14 +321,55 @@
       <div class="doc-body doc-body--reverse" style="margin-top:32px;">
         <div class="doc-text">
           <p><strong>Penalties</strong> — tap <strong>PENALTY</strong>, then a type from the grid (Hooking, Tripping,
-            Roughing, Too Many Players, and more), or tap <strong>Other</strong> to type one in. Then the team and
-            the player who took it, if known.</p>
+            Roughing, Too Many Players, and more), or tap <strong>Other</strong> to type one in. Pick how long it is:
+            <strong>2:00 MINOR</strong>, <strong>4:00 DOUBLE</strong>, <strong>5:00 MAJOR</strong> or
+            <strong>10:00 MISC.</strong> (a misconduct is logged but doesn't leave the team a skater down). In YOUTH
+            rules the length is always 1 minute. Then pick the team and the player who took it, if known. The
+            announcement says how long the penalty is and who is on the power play, for example
+            <em>⚡ Riverside Rapids power play (5 on 4)</em>.</p>
         </div>
         <div class="doc-shots">
           <figure class="doc-shot doc-shot--wide">
-            <img src="screenshots/manual/15b-penalty-full.webp" width="640" height="2261" loading="lazy"
-              alt="Full penalty screen: penalty type grid with Roughing selected, team and player pickers, and the resulting preview." />
-            <figcaption>Penalty type, team, player and preview together</figcaption>
+            <img src="screenshots/manual/15c-penalty-duration.webp" width="640" height="1352" loading="lazy"
+              alt="The penalty screen with Roughing selected, the 2:00 MINOR duration, Northgate Nighthawks and #6 W. Petrenko chosen, and the announcement preview with the power play line." />
+            <figcaption>Penalty type, length, team, player and preview</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="doc-body" style="margin-top:32px;">
+        <div class="doc-text">
+          <p><strong>The penalty box</strong> — penalties that are still being served appear in a card under the
+            period buttons. It shows who is serving, the strength (for example <strong>⚡ POWER PLAY — Riverside
+            Rapids · 5 on 3</strong>, or <strong>4 on 4</strong> when each team has one), and when each penalty is
+            expected to end. Rink Cast has no running clock of its own, so it works that out from the clock you set;
+            when your clock passes a penalty's expected end the row turns amber and says <strong>due now</strong>.
+            Penalties carry over into the next period using that period's length.</p>
+          <p>When a penalty is over, tap <strong>DONE</strong> on its row. The clock jumps to the time it was
+            expected to end; adjust it if the real clock was stopped, check the preview, and tap
+            <strong>SEND</strong>. The announcement names the player and says what the strength is now &mdash; for
+            example <em>✅ PENALTY OVER — Northgate Nighthawks | #6 W. Petrenko (Roughing) | 2nd Period | 6:10</em>
+            followed by <em>Still on the power play: Riverside Rapids (5 on 4)</em> or <em>Back to full strength</em>.
+            You don't need a separate "full strength" message. A team never drops below 3 skaters.</p>
+          <p><strong>YOUTH rules</strong> keep the penalty box and DONE so you can see who is serving and announce
+            when they're back, but there is no strength banner, no "5 on 4" wording and no power-play tags, and every
+            penalty is 1 minute.</p>
+        </div>
+        <div class="doc-shots doc-shots--row">
+          <figure class="doc-shot doc-shot--wide">
+            <img src="screenshots/manual/25-penalty-box.webp" width="640" height="1352" loading="lazy"
+              alt="The penalty box showing a power play for Riverside Rapids, 5 on 3, with two Northgate Nighthawks penalties, one marked due now, each with a DONE button." />
+            <figcaption>The penalty box</figcaption>
+          </figure>
+          <figure class="doc-shot doc-shot--wide">
+            <img src="screenshots/manual/26-penalty-over.webp" width="640" height="1352" loading="lazy"
+              alt="Ending a penalty: the row for #6 W. Petrenko marked ENDING, the clock set to 6:10, and the PENALTY OVER preview with CANCEL and SEND." />
+            <figcaption>Tap DONE, set the time, send</figcaption>
+          </figure>
+          <figure class="doc-shot doc-shot--wide">
+            <img src="screenshots/manual/29-youth-penalty-box.webp" width="640" height="1352" loading="lazy"
+              alt="The penalty box in YOUTH rules: PENALTY BOX, 2 serving, with no strength banner and the duration fixed at 1 MIN (youth mode)." />
+            <figcaption>The penalty box in YOUTH rules</figcaption>
           </figure>
         </div>
       </div>
@@ -320,8 +391,12 @@
       <div class="doc-body doc-body--reverse" style="margin-top:32px;">
         <div class="doc-text">
           <p><strong>The clock</strong> — scroll each wheel to set minutes and seconds, or hold a number to type it
-            directly. <strong>⚠ 1 MIN</strong> sends a one-minute-left warning for the current period; <strong>✅ FULL
-            STR</strong> announces a return to full strength after a penalty expires.</p>
+            directly. <strong>⚠ 1 MIN</strong> sends a one-minute-left warning for the current period. The clock starts
+            each period at that period's length, and the minutes wheel goes up to it.</p>
+          <p>The chip under the period buttons, for example <strong>Standard · 2nd period: 10 min · CHANGE</strong>,
+            opens the <strong>Game rules</strong> sheet: switch between STANDARD and YOUTH, or correct the length of
+            the current period (tap 10, 12, 15 or 20, or Other to type one), then tap <strong>SAVE</strong>.
+            Penalties already in the penalty box keep the length they had, and nothing is sent to the chat.</p>
         </div>
         <div class="doc-shots">
           <figure class="doc-shot doc-shot--wide">
@@ -352,18 +427,17 @@
             CHANGE, PULLED and BACK IN send a message without a name, and empty-net goals are still tagged.</p>
         </div>
         <div class="doc-shots doc-shots--row">
-          <!-- TODO screenshots (capture on the demo teams, Android and iPhone):
-          <figure class="doc-shot doc-shot--wide">
-            <img src="screenshots/manual/22-goalie-start.webp" width="640" height="1353" loading="lazy"
-              alt="The GOALIE event with START selected, Riverside Rapids chosen, #1 R. Castellane picked and the In Goal preview, with SET GOALIE chips under the score." />
+                    <figure class="doc-shot doc-shot--wide">
+            <img src="screenshots/manual/30-goalie-start.webp" width="640" height="1405" loading="lazy"
+              alt="The GOALIE event with START selected, Riverside Rapids chosen and #1 R. Castellane picked, with SET GOALIE chips under the score and the In Goal preview." />
             <figcaption>Setting the starting goalie</figcaption>
           </figure>
           <figure class="doc-shot doc-shot--wide">
-            <img src="screenshots/manual/23-goalie-pulled.webp" width="640" height="1353" loading="lazy"
+            <img src="screenshots/manual/31-goalie-pulled.webp" width="640" height="1352" loading="lazy"
               alt="The GOALIE event with PULLED selected for Northgate Nighthawks, whose chip reads NET EMPTY, and the Goalie Pulled preview." />
             <figcaption>Pulling the goalie</figcaption>
           </figure>
-          -->
+
         </div>
       </div>
 
@@ -371,7 +445,7 @@
         <div class="doc-text">
           <p><strong>Periods</strong> — tap <strong>1ST</strong>, <strong>2ND</strong>, <strong>3RD</strong> or
             <strong>OT</strong> to move to it, which sends a "start of period" announcement. <strong>END
-            PERIOD</strong> sends a recap of that period's goals, penalties and goalie changes before you move on.</p>
+            PERIOD</strong> sends a recap of that period's goals, penalties and goalie changes &mdash; including anyone still serving a penalty &mdash; before you move on. The clock starts each period at the length you set.</p>
         </div>
         <div class="doc-shots">
           <figure class="doc-shot doc-shot--wide">
@@ -390,7 +464,9 @@
         <div class="doc-text">
           <p>Tap <strong>EDIT LOG</strong> above the clock to see every goal, penalty and goalie change logged so far. Swipe an
             entry left to reveal a delete button — removing it updates the score and final summary to match, as if
-            it never happened. Deleting a goalie change also rewinds the goalie chips under the score to match.
+            it never happened. Each penalty also shows its length and when it ended (or that it's still serving); tap
+            <strong>UNDO END</strong> to put a penalty back in the penalty box if you ended it by mistake. Deleting a
+            goalie change also rewinds the goalie chips under the score to match.
             (Goals you've already logged keep their EMPTY NET tag even if you later delete the pull.)</p>
           <p>There's no "undo send," though: deleting an entry only fixes the game record inside Rink Cast, not a
             message that's already gone out. If you sent something wrong, a quick correction message in the chat is
@@ -407,7 +483,11 @@
               alt="Edit log with an entry swiped to reveal its delete button." />
             <figcaption>Swipe to delete</figcaption>
           </figure>
-          <!-- TODO screenshot: screenshots/manual/19c-edit-log-goalies.webp - Edit log with a Goalies section (start, change, pulled) -->
+          <figure class="doc-shot doc-shot--wide">
+            <img src="screenshots/manual/19c-edit-log-tracking.webp" width="640" height="1352" loading="lazy"
+              alt="Edit log with goals (one tagged Power Play), penalties with their length and when they ended (one ended by a goal, with UNDO END), and a Goalies section." />
+            <figcaption>Edit log with penalties and goalies</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -419,7 +499,7 @@
         <div class="doc-text">
           <ol class="doc-steps">
             <li>Tap <strong>END GAME</strong> on the play builder.</li>
-            <li>Review the final score and the full list of goals, penalties and goalie changes.</li>
+            <li>Review the final score and the full list of goals (with power play, hat trick and empty net notes), penalties with their lengths, and goalie changes.</li>
             <li>Tap <strong>SEND SUMMARY</strong> to share the recap.</li>
           </ol>
           <p>Sending the summary also resets Rink Cast back to the Setup screen, ready for the next game.</p>
@@ -545,6 +625,35 @@
             <dt>A team shows "⚠ no roster."</dt>
             <dd>That team has no players yet. Open it from Manage Teams and add at least one before using it in a
               game — the app doesn't require full rosters, so this is just a heads-up, not a hard block.</dd>
+
+            <dt>A penalty is still in the penalty box but it's over.</dt>
+            <dd>Tap <strong>DONE</strong> on its row, set the time, and tap SEND. Rink Cast can't end a penalty by
+              itself because it has no clock of its own. The row turns amber and says "due now" once the clock you've
+              set passes its expected end.</dd>
+
+            <dt>I ended a penalty by mistake.</dt>
+            <dd>Open <strong>EDIT LOG</strong> and tap <strong>UNDO END</strong> beside it. It goes back in the
+              penalty box. (A message you already sent can't be unsent, so a quick correction in the chat is the
+              fastest fix for anyone reading along.)</dd>
+
+            <dt>The strength looks wrong.</dt>
+            <dd>The strength comes from the penalties still in the box, so check the box first: end any that are
+              over with DONE, and delete any logged by mistake in the Edit Log. Misconducts (10:00 MISC.) don't count
+              as a skater down. In YOUTH rules no strength is shown at all.</dd>
+
+            <dt>Why did a goal end a penalty?</dt>
+            <dd>It didn't, unless you said so. After a power-play goal Rink Cast asks whether it ended a minor; tap
+              <strong>KEEP</strong> if it didn't, or <strong>UNDO END</strong> in the Edit Log if you tapped END IT by
+              mistake.</dd>
+
+            <dt>Our league has 1-minute penalties and no power plays.</dt>
+            <dd>Choose <strong>YOUTH</strong> under <strong>Game rules</strong> when you set up the game. Penalties
+              are always 1 minute and there's no strength or power-play tagging.</dd>
+
+            <dt>I started the game with the wrong rules or the wrong period length.</dt>
+            <dd>Tap the chip under the period buttons (for example <strong>Standard · 2nd period: 10 min ·
+              CHANGE</strong>), change the rules or the length, and tap <strong>SAVE</strong>. Penalties already in
+              the box keep the length they had.</dd>
 
             <dt>I don't have the other team's roster. Can I still log their goalie?</dt>
             <dd>Partly. Without a roster there's no one to pick, so <strong>START</strong> isn't available for that
