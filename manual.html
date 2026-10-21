@@ -331,9 +331,44 @@
 
       <div class="doc-body" style="margin-top:32px;">
         <div class="doc-text">
+          <p><strong>Goalies</strong> <em>(optional)</em> — tap <strong>GOALIE</strong>, then choose what happened:</p>
+          <ul>
+            <li><strong>START</strong> — who is in net. Pick the team, then the goalie from its roster. This is also
+              what the dashed <strong>＋ SET GOALIE</strong> chip under the score does: tap it and Rink Cast jumps
+              straight to START for that team. Set the goalies whenever suits you, before or after the puck drops
+              &mdash; the pre-game "Game Time" message isn't affected.</li>
+            <li><strong>CHANGE</strong> — a different goalie comes in. Pick who, and the message says who they
+              replaced.</li>
+            <li><strong>PULLED</strong> — the goalie comes out for an extra attacker. There's nobody to pick; the
+              team's chip turns red and reads <strong>NET EMPTY</strong>.</li>
+            <li><strong>BACK IN</strong> — the goalie returns to the net.</li>
+          </ul>
+          <p>While a team's net is empty, any goal scored against it is tagged <strong>EMPTY NET</strong>
+            automatically in the announcement and in the game summary.</p>
+          <p>A team with no roster still works for everything except START, since there's no one to pick from:
+            CHANGE, PULLED and BACK IN send a message without a name, and empty-net goals are still tagged.</p>
+        </div>
+        <div class="doc-shots doc-shots--row">
+          <!-- TODO screenshots (capture on the demo teams, Android and iPhone):
+          <figure class="doc-shot doc-shot--wide">
+            <img src="screenshots/manual/22-goalie-start.webp" width="640" height="1353" loading="lazy"
+              alt="The GOALIE event with START selected, Riverside Rapids chosen, #1 R. Castellane picked and the In Goal preview, with SET GOALIE chips under the score." />
+            <figcaption>Setting the starting goalie</figcaption>
+          </figure>
+          <figure class="doc-shot doc-shot--wide">
+            <img src="screenshots/manual/23-goalie-pulled.webp" width="640" height="1353" loading="lazy"
+              alt="The GOALIE event with PULLED selected for Northgate Nighthawks, whose chip reads NET EMPTY, and the Goalie Pulled preview." />
+            <figcaption>Pulling the goalie</figcaption>
+          </figure>
+          -->
+        </div>
+      </div>
+
+      <div class="doc-body" style="margin-top:32px;">
+        <div class="doc-text">
           <p><strong>Periods</strong> — tap <strong>1ST</strong>, <strong>2ND</strong>, <strong>3RD</strong> or
             <strong>OT</strong> to move to it, which sends a "start of period" announcement. <strong>END
-            PERIOD</strong> sends a recap of that period's goals and penalties before you move on.</p>
+            PERIOD</strong> sends a recap of that period's goals, penalties and goalie changes before you move on.</p>
         </div>
         <div class="doc-shots">
           <figure class="doc-shot doc-shot--wide">
@@ -350,9 +385,10 @@
       <h2><span class="doc-number">8</span>Fixing mistakes</h2>
       <div class="doc-body">
         <div class="doc-text">
-          <p>Tap <strong>EDIT LOG</strong> above the clock to see every goal and penalty logged so far. Swipe an
+          <p>Tap <strong>EDIT LOG</strong> above the clock to see every goal, penalty and goalie change logged so far. Swipe an
             entry left to reveal a delete button — removing it updates the score and final summary to match, as if
-            it never happened.</p>
+            it never happened. Deleting a goalie change also rewinds the goalie chips under the score to match.
+            (Goals you've already logged keep their EMPTY NET tag even if you later delete the pull.)</p>
           <p>There's no "undo send," though: deleting an entry only fixes the game record inside Rink Cast, not a
             message that's already gone out. If you sent something wrong, a quick correction message in the chat is
             still the fastest fix for anyone already reading along.</p>
@@ -368,6 +404,7 @@
               alt="Edit log with an entry swiped to reveal its delete button." />
             <figcaption>Swipe to delete</figcaption>
           </figure>
+          <!-- TODO screenshot: screenshots/manual/19c-edit-log-goalies.webp - Edit log with a Goalies section (start, change, pulled) -->
         </div>
       </div>
     </section>
@@ -379,7 +416,7 @@
         <div class="doc-text">
           <ol class="doc-steps">
             <li>Tap <strong>END GAME</strong> on the play builder.</li>
-            <li>Review the final score and the full list of goals and penalties.</li>
+            <li>Review the final score and the full list of goals, penalties and goalie changes.</li>
             <li>Tap <strong>SEND SUMMARY</strong> to share the recap.</li>
           </ol>
           <p>Sending the summary also resets Rink Cast back to the Setup screen, ready for the next game.</p>
@@ -505,6 +542,19 @@
             <dt>A team shows "⚠ no roster."</dt>
             <dd>That team has no players yet. Open it from Manage Teams and add at least one before using it in a
               game — the app doesn't require full rosters, so this is just a heads-up, not a hard block.</dd>
+
+            <dt>I don't have the other team's roster. Can I still log their goalie?</dt>
+            <dd>Partly. Without a roster there's no one to pick, so <strong>START</strong> isn't available for that
+              team. <strong>CHANGE</strong>, <strong>PULLED</strong> and <strong>BACK IN</strong> all still work and
+              send a message without a name, and goals scored while their net is empty are tagged EMPTY NET.</dd>
+
+            <dt>I set the wrong goalie.</dt>
+            <dd>Open <strong>EDIT LOG</strong>, swipe the goalie entry to delete it, then log it again with the
+              right goalie. The chip under the score updates right away. A message you already sent can't be
+              unsent, so a quick correction in the chat is the fastest fix for anyone reading along.</dd>
+
+            <dt>Do I have to track goalies?</dt>
+            <dd>No. It's entirely optional, and a game with no goalie events looks and works exactly as it always has.</dd>
 
             <dt>How do I get help with my subscription?</dt>
             <dd>Open Settings and tap your <strong>Support ID</strong> to copy it, then include it when you contact
